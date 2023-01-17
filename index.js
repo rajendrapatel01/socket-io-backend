@@ -4,6 +4,8 @@ const io = require("socket.io")(8080, {
   },
 });
 
+console.log("I am running");
+
 let activeUser = [];
 
 io.on("connection", (socket) => {
